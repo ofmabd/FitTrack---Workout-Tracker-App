@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block title %}Progress{% endblock %}
+
+{% block main %}
+<div class="container mt-5">
+  <h2 class="text-center fw-bold mb-4">Workout Progress</h2>
+
+  {% for workout in workouts %}
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h5 class="card-title">{{ workout.name }} ({{ workout.type }})</h5>
+      <p><strong>Date:</strong> {{ workout.date }} | <strong>Duration:</strong> {{ workout.duration }} min</p>
+      {% if workout.notes %}<p><em>{{ workout.notes }}</em></p>{% endif %}
+
+      <table class="table table-sm table-bordered mt-3">
+        <thead>
+          <tr>
+            <th>Exercise</th>
+            <th>Sets</th>
+            <th>Reps</th>
+            <th>Weight</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for exercise in workout.exercises %}
+          <tr>
+            <td>{{ exercise.exercise_name }}</td>
+            <td>{{ exercise.sets }}</td>
+            <td>{{ exercise.reps }}</td>
+            <td>{{ exercise.weight }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <a href="/delete/{{ workout.id }}" class="btn btn-danger btn-sm">Delete Workout</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

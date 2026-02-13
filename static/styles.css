@@ -1,0 +1,56 @@
+/* ===== General ===== */
+body {
+    background-color: #f8f9fa; /* light gray background */
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ===== Navbar ===== */
+nav.navbar {
+    background-color: #228B22; /* forest green */
+}
+
+nav .nav-link,
+nav .navbar-brand {
+    color: #ffffff;
+}
+
+nav .nav-link:hover {
+    color: #a0e6a0; /* lighter green on hover */
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+    background-color: #228B22;
+    border-color: #228B22;
+}
+
+.btn-primary:hover {
+    background-color: #1b6b1b;
+    border-color: #1b6b1b;
+}
+
+/* Secondary (gray) button — used for "View Progress" */
+.btn-outline-primary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-outline-primary:hover {
+    background-color: #6c757d;
+    color: #fff;
+    border-color: #6c757d;
+}
+
+/* ===== Table ===== */
+table.table thead {
+    background-color: #2e8b57;
+    color: white;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    color: #6c757d;
+    margin-top: 40px;
+    padding: 10px 0;
+}

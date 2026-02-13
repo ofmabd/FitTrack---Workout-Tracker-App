@@ -1,8 +1,8 @@
 # FitTrack — Workout Log Tracker 
 ### Video URL: https://youtu.be/N5h0ImMksgQ
 
-FitTrack is a full-stack workout tracking web app built with Flask and SQLite.  
-Users can log workouts, add exercises with sets/reps/weight, and view progress over time.
+A lightweight full-stack fitness tracking web app built with Flask, SQLite, and Jinja templating. Users can log workouts, add exercises with sets, reps, and weight, and track structured progress over time through a clean, minimal interface focused on practical UX and organized data.
+
 
 ## Features
 
@@ -15,7 +15,7 @@ Users can log workouts, add exercises with sets/reps/weight, and view progress o
 ## Tech Stack
 
 - Python (Flask)
-- CS50 SQL (SQLite)
+- SQLite (via CS50 SQL library)
 - HTML / CSS
 - Jinja Templates
 
@@ -36,13 +36,13 @@ http://127.0.0.1:5000
 ## Screenshots
 
 ### Home Page
-![Home](homepage.png)
+![Home](assets/homepage.png)
 
 ### Log Workout
-![Log](log.png)
+![Log](assets/log.png)
 
 ### Progress Page
-![Progress](progress.png)
+![Progress](assets/progress.png)
 
 ## Notes
 

@@ -33,10 +33,20 @@ Open:
 
 http://127.0.0.1:5000
 
+## Screenshots
+
+### Home Page
+![Home](homepage.png)
+
+### Log Workout
+![Log](log.png)
+
+### Progress Page
+![Progress](progress.png)
+
 ## Notes
 
 This project was built as part of my CS50x final project while transitioning into software engineering.
-
 ---
 
 Built by Darius Bamfo
